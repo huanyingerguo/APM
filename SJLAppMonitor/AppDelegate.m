@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SJLCartonDetector.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    [[SJLCartonDetector sharedInstance] startMonitorCarton:0.5];
 }
 
 

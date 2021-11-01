@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA78ABD62727A36F00AC6EFF /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CA78ABD52727A36F00AC6EFF /* BSBacktraceLogger.m */; };
 		CAA1B9C22723E21C00E903CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA1B9C12723E21C00E903CA /* AppDelegate.m */; };
 		CAA1B9C52723E21C00E903CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA1B9C42723E21C00E903CA /* ViewController.m */; };
 		CAA1B9C72723E22400E903CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA1B9C62723E22400E903CA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		CAA1B9CD2723E22400E903CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA1B9CC2723E22400E903CA /* main.m */; };
 		CAA1B9D82723E22400E903CA /* SJLCatonDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA1B9D72723E22400E903CA /* SJLCatonDetectorTests.m */; };
 		CAA1B9E32723E22400E903CA /* SJLCatonDetectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA1B9E22723E22400E903CA /* SJLCatonDetectorUITests.m */; };
+		CAA1B9F52723EEA200E903CA /* SJLCartonDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA1B9F42723EEA200E903CA /* SJLCartonDetector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA78ABD127268E3100AC6EFF /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonDefine.h; path = Biz/CommonDefine.h; sourceTree = "<group>"; };
+		CA78ABD42727A36F00AC6EFF /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSBacktraceLogger.h; path = Libs/BSBackTrace/BSBacktraceLogger.h; sourceTree = "<group>"; };
+		CA78ABD52727A36F00AC6EFF /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSBacktraceLogger.m; path = Libs/BSBackTrace/BSBacktraceLogger.m; sourceTree = "<group>"; };
 		CAA1B9BD2723E21B00E903CA /* SJLCatonDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJLCatonDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA1B9C02723E21C00E903CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAA1B9C12723E21C00E903CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +55,8 @@
 		CAA1B9DE2723E22400E903CA /* SJLCatonDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJLCatonDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA1B9E22723E22400E903CA /* SJLCatonDetectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLCatonDetectorUITests.m; sourceTree = "<group>"; };
 		CAA1B9E42723E22400E903CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAA1B9F32723EEA200E903CA /* SJLCartonDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SJLCartonDetector.h; path = Biz/SJLCartonDetector.h; sourceTree = "<group>"; };
+		CAA1B9F42723EEA200E903CA /* SJLCartonDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SJLCartonDetector.m; path = Biz/SJLCartonDetector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +84,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA78ABCC272667E900AC6EFF /* Carton */ = {
+			isa = PBXGroup;
+			children = (
+				CAA1B9F32723EEA200E903CA /* SJLCartonDetector.h */,
+				CAA1B9F42723EEA200E903CA /* SJLCartonDetector.m */,
+			);
+			name = Carton;
+			sourceTree = "<group>";
+		};
+		CA78ABCD2726680300AC6EFF /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		CA78ABCE2726681C00AC6EFF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		CA78ABCF2726682700AC6EFF /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThreadPool;
+			sourceTree = "<group>";
+		};
+		CA78ABD027268E0400AC6EFF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CA78ABD127268E3100AC6EFF /* CommonDefine.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		CA78ABD32727A2DB00AC6EFF /* BSBackTrace */ = {
+			isa = PBXGroup;
+			children = (
+				CA78ABD42727A36F00AC6EFF /* BSBacktraceLogger.h */,
+				CA78ABD52727A36F00AC6EFF /* BSBacktraceLogger.m */,
+			);
+			name = BSBackTrace;
+			sourceTree = "<group>";
+		};
 		CAA1B9B42723E21B00E903CA = {
 			isa = PBXGroup;
 			children = (
-				CAA1B9BF2723E21C00E903CA /* SJLCatonDetector */,
+				CAA1B9BF2723E21C00E903CA /* SJLAppMonitor */,
 				CAA1B9D62723E22400E903CA /* SJLCatonDetectorTests */,
 				CAA1B9E12723E22400E903CA /* SJLCatonDetectorUITests */,
 				CAA1B9BE2723E21B00E903CA /* Products */,
@@ -97,20 +151,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CAA1B9BF2723E21C00E903CA /* SJLCatonDetector */ = {
+		CAA1B9BF2723E21C00E903CA /* SJLAppMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				CAA1B9F22723E25700E903CA /* Libs */,
+				CAA1B9F12723E23F00E903CA /* UI */,
+				CAA1B9F02723E23700E903CA /* Biz */,
 				CAA1B9C02723E21C00E903CA /* AppDelegate.h */,
 				CAA1B9C12723E21C00E903CA /* AppDelegate.m */,
-				CAA1B9C32723E21C00E903CA /* ViewController.h */,
-				CAA1B9C42723E21C00E903CA /* ViewController.m */,
-				CAA1B9C62723E22400E903CA /* Assets.xcassets */,
-				CAA1B9C82723E22400E903CA /* Main.storyboard */,
 				CAA1B9CB2723E22400E903CA /* Info.plist */,
 				CAA1B9CC2723E22400E903CA /* main.m */,
 				CAA1B9CE2723E22400E903CA /* SJLCatonDetector.entitlements */,
 			);
-			path = SJLCatonDetector;
+			path = SJLAppMonitor;
 			sourceTree = "<group>";
 		};
 		CAA1B9D62723E22400E903CA /* SJLCatonDetectorTests */ = {
@@ -129,6 +182,37 @@
 				CAA1B9E42723E22400E903CA /* Info.plist */,
 			);
 			path = SJLCatonDetectorUITests;
+			sourceTree = "<group>";
+		};
+		CAA1B9F02723E23700E903CA /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				CA78ABD027268E0400AC6EFF /* Base */,
+				CA78ABCF2726682700AC6EFF /* ThreadPool */,
+				CA78ABCE2726681C00AC6EFF /* Network */,
+				CA78ABCD2726680300AC6EFF /* Memory */,
+				CA78ABCC272667E900AC6EFF /* Carton */,
+			);
+			name = Biz;
+			sourceTree = "<group>";
+		};
+		CAA1B9F12723E23F00E903CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAA1B9C32723E21C00E903CA /* ViewController.h */,
+				CAA1B9C42723E21C00E903CA /* ViewController.m */,
+				CAA1B9C62723E22400E903CA /* Assets.xcassets */,
+				CAA1B9C82723E22400E903CA /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CAA1B9F22723E25700E903CA /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CA78ABD32727A2DB00AC6EFF /* BSBackTrace */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA1B9F52723EEA200E903CA /* SJLCartonDetector.m in Sources */,
 				CAA1B9C52723E21C00E903CA /* ViewController.m in Sources */,
 				CAA1B9CD2723E22400E903CA /* main.m in Sources */,
 				CAA1B9C22723E21C00E903CA /* AppDelegate.m in Sources */,
+				CA78ABD62727A36F00AC6EFF /* BSBacktraceLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +513,7 @@
 				CODE_SIGN_ENTITLEMENTS = SJLCatonDetector/SJLCatonDetector.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SJLCatonDetector/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SJLAppMonitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -445,7 +531,7 @@
 				CODE_SIGN_ENTITLEMENTS = SJLCatonDetector/SJLCatonDetector.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SJLCatonDetector/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SJLAppMonitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
